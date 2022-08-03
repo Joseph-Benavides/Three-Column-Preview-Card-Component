@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+main h1 {
+    margin: 0.75em 0;    
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.container {
+    margin: 2em auto;
+    max-width: 380px;
+    width: 90%;
+    min-width: 280px;
+}
+
+.sedan, .suvs, .luxury {
+    padding: 2.5em 3em;
+}
+
+.sedan {
+    background-color: rgb(224, 136, 4);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.sedan p, .suvs p, .luxury p {
+    margin: 2em 0;
+    color: rgba(255, 255, 255, 0.700);
+    line-height: 1.75em;
+    /* color: lightgray; */
+}
+
+.suvs {
+    background-color: rgb(24, 122, 139);
+}
+
+.luxury {
+    background-color: rgb(6, 78, 75);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+button {
+    margin: 1em 0;
+    padding: 0.75em 1.5em;
+    border-radius: 20px;
+    border: 2px solid white;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.sedan button {
+    color: rgb(224, 136, 4);
+}
+
+.sedan button:hover {
+    cursor: pointer;
+    background-color: rgb(224, 136, 4);
+    color: white;
+}
+
+.suvs button {
+    color: rgb(24, 122, 139);
+}
+
+.suvs button:hover {
+    cursor: pointer;
+    background-color: rgb(24, 122, 139);
+    color: white;
+}
+
+.luxury button {
+    color: rgb(6, 78, 75);
+}
+
+.luxury button:hover {
+    cursor: pointer;
+    background-color: rgb(6, 78, 75);
+    color: white;
+}
+
+/* Media Queries */
+
+@media (min-width: 900px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        max-width: 900px;
+        width: 96%;
+    }
+    .sedan, .suvs, .luxury {
+        padding: 2.5em 2.5em;
+    }
+    .sedan {
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 6px;
+    }
+    .luxury {
+        border-bottom-left-radius: unset;
+        border-bottom-right-radius: unset;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+}
